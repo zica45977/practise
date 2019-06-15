@@ -60,7 +60,7 @@ public class MemberViewController implements Initializable {
 		columnID.setCellValueFactory(cvf -> cvf.getValue().uidProperty());
 		columnPW.setCellValueFactory(cvf -> cvf.getValue().upwProperty());
 		columnName.setCellValueFactory(cvf -> cvf.getValue().unameProperty());		
-		columnContact.setCellValueFactory(cvf -> cvf.getValue().contactProperty());
+		columnContact.setCellValueFactory(cvf -> cvf.getValue().contactProperty());//연락처 추가
 		
 		tableViewMember.getSelectionModel().selectedItemProperty().addListener(
 				(observable, oldValue, newValue) -> showMemberInfo(newValue));
